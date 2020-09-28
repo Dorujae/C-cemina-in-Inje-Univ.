@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+	int star;
+	scanf_s("%d", &star);
+	
+	for (int i = 1; i <= star; i++)
+	{
+		for (int j = star; j >= i + 1; j--)
+		{
+			printf(" ");
+		}
+		for (int k = 1; k <= i * 2 - 1; k++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+}
